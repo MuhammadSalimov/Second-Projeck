@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+$colorblue:rgb(3, 3, 49);
+$cloraqua:rgb(21, 27, 201);
+
+
+@mixin buttons ($width, $height, $margin, $padding, $fw,$fz, $color,$bg, $border) {
+    width: $width;
+    height: $height;
+    color: $color;
+    background-color: $bg;
+    border: $border;
+    margin: $margin;
+    padding: $padding;
+    font-weight: $fw;
+    font-size: $fz;
+}
+
+@mixin phone {
+    @media (max-width:768px){
+        @content;
+    }
+}
+
+
+.navbar-expand-lg{
+    display: flex;
+
+    justify-content: space-between !important;
+}
+header{
+    background-image: url(../images/hero_home_june21.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: #07073698;
+}
+
+.navbarmain{
+    width: 60%;
+  
+    margin-left: 150px;
+    margin-right: 50px;
+    justify-content: space-between;
+
+}
+
+
+.navbar-brand img{
+    width: 200px;
+}
+.bannerheight{
+    height: 550px;
+}
+
+.meulink{
+    font-size: 22px;
+    display: block;
+    margin: 0px 15px;
+    font-weight: 600;
+}
+
+.foranavbar p {
+    width: 80px;
+ 
+    border: none;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    font-size: 22px;
+    font-weight: 600;
+  }
+.navbarmain li a{
+    transition-duration: .3s;
+}
+.navbarmain li a:hover{
+    background-color: rgba(240, 248, 255, 0.428);
+}
+
+img{
+    width: 100%;
+}
+.bannertitle{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.bannertitle p{
+    font-size: 20px;
+}
+.bannertitle h1{
+    font-size: 70px;
+    span{
+        color: $cloraqua;
+    }
+    color: $colorblue;
+    font-weight: 800;
+    margin-bottom: 25px;
+    
+}
+.bannertitle button{
+    transition-duration: .5s;
+    &:hover{
+        background-color: blue;
+    }
+    background-color: $cloraqua;
+    color: white;
+    border: none;
+    margin: 25px 0px;
+    height: 50px;
+    width: 170px;
+}
+
+.TrustBadges{
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    img{
+        width:400px;
+    }
+}
+
+#colorblue{
+    color: $colorblue;
+}
+#coloraqua{
+    color: $cloraqua;
+}
+.colorblue{
+    color: $colorblue;
+}
+.coloraqua{
+    color: $cloraqua;
+}
+.colorblack{
+    color: black;
+}
+
+.colorwhite{
+    background-color: white;
+}
+
+.fontweight800{
+    font-weight: 800;
+}
+.fontweight700{
+    font-weight: 700;
+}
+.fontweight600{
+    font-weight: 600;
+}
+.fontweight500{
+    font-weight: 500;
+}
+
+div {
+    video{
+        width: 100%;
+    }
+}
+
+.checkgreen{
+    border: 1px solid green;
+    padding: 3px 6px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    margin: 0px 10px;
+}
+.paddingleft50{
+    padding: 15px;
+    padding-left: 100px;
+    a{
+        
+        padding: 0px 0px 0px 20px;
+        i{
+            margin-left: 5px;
+        }
+    }
+}
+
+.firstsection{
+    background-color: $colorblue;
+    h3{
+        color: white;
+        margin: 25px 0px 15px 0px;
+        font-weight: 500;
+    }
+    button{
+        border: none;
+        padding: 10px 0px;
+        background-color: $cloraqua;
+        width: 150px ;
+        margin: 15px 0px 25px 0px;
+        color: white;
+        font-weight:500 ;
+    }
+}
+
+.btn-coloraqua{
+    color: white;
+    background-color: $cloraqua;
+    width: 300px;
+    border: none;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 25px 0px 25px 15px;
+}
+.ahrefright{
+    font-weight: 600;
+    margin-left: 15px;
+    i{
+        margin-left: 5px;
+    }
+}
+
+.imgsection{
+    width: 100%;
+}
+.buttonaqua{
+    color: white;
+    background-color: $cloraqua;
+    width: 200px;
+    padding: 10px 0px;
+    border: none;
+}
+@media (max-width:768px){
+
+    .margintopfirst {
+        margin-top: 200px;
+    }
+
+    .foranavbar p{
+        display: none;
+    }
+    .navbarmain{
+      text-align: center;
+    }
+    .foranavbar{
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
+    img{
+        width: 100%;
+    }
+
+    .bannertitle{
+        margin: 200px 0px 0px 0px;
+        text-align:center;
+
+        h1{
+
+            font-size: 50px;
+            margin: 0;
+        }
+        p{
+            font-size: 16px;
+        }
+        
+    }
+    
+    .TrustBadges{
+        height:500px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        img{
+            width:400px;
+        }
+    }
+
+    #logotext{
+        @include buttons(100px,35px ,0 ,0px 15px ,600 ,28px ,$colorblue ,0 ,1px solid $colorblue )
+    }
+}
+// $width, $height, $margin, $padding, $fw,$fz, $color,$bg, $border
+#logotext{
+    @include buttons(120px,40px ,0 ,0px 25px ,800 ,32px ,$colorblue ,0 ,2px solid $colorblue )
+}
+
+
+body{
+    overflow-x: hidden;
+  }
+  #slidersectionexamle{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slide-containerexample{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .image-slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+  }
+  
+  .slides-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  
+  .imgsliderexample{
+    position: relative;
+    filter: saturate(10%);
+    transition: .5s;
+  }
+  
+  #imgsliderexamle1{
+    width: 200px;
+    height: 380px;
+  }
+  
+  #imgsliderexamle2{
+    width: 200px;
+    height: 380px;
+  }
+  
+  #imgsliderexamle3{
+    width: 500px;
+    height: 380px;
+  }
+  
+  #imgsliderexamle4{
+    width: 200px;
+    height: 380px;
+  }
+  
+  #imgsliderexamle5{
+    width: 500px;
+    height: 380px;
+  }
+  
+  #imgsliderexamle6{
+    width: 590px;
+    height: 380px;
+  }
+  #imgsliderexamle7{
+    width: 200px;
+    height: 380px;
+  }
+  .buttonsliderexample{
+    position: absolute;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.41);
+  }
+  
+  #buttonslider1{
+    width: 200px;
+    height: 380px;
+    border-radius: 30px;
+  }
+  
+  #buttonslider2{
+    width: 200px;
+    height: 380px;
+    border-radius: 30px;
+  }
+  #buttonslider3{
+    width: 500px;
+    height: 380px;
+  }
+  
+  #buttonslider4{
+    width: 200px;
+    height: 380px;
+    border-radius: 30px;
+  }
+  #buttonslider5{
+    width: 500px;
+    height: 380px;
+  }
+  #buttonslider6{
+    width: 590px;
+    height: 380px;
+  }
+  
+  #buttonslider7{
+    width: 200px;
+    height: 380px;
+    border-radius: 30px;
+  }
+  .buttonsliderexample:hover{
+    background-color: rgb(0,0,0, .2);
+  }
+  
+  #slider-span1:target ~ .image-slider #imgsliderexamle1,
+  #slider-span1:target ~ .image-slider #buttonslider1{
+    width: 240px;
+    height: 460px;
+    background-color: transparent;
+    filter: saturate(100%);
+  }
+  
+  #slider-span2:target ~ .image-slider #imgsliderexamle2,
+  #slider-span2:target ~ .image-slider #buttonslider2{
+    width: 240px;
+    height: 460px;
+    background-color: transparent;
+    filter: saturate(100%);
+  }
+  
+  #slider-span3:target ~ .image-slider #imgsliderexamle3,
+  #slider-span3:target ~ .image-slider #buttonslider3{
+    width: 600px;
+    height: 460px;
+    background-color: transparent;
+    filter: saturate(100%);
+  }
+  
+  #slider-span4:target ~ .image-slider #imgsliderexamle4,
+  #slider-span4:target ~ .image-slider #buttonslider4{
+    width: 240px;
+    height: 460px;
+    background-color: transparent;
+    filter: saturate(100%);
+  }
+  
+  #slider-span5:target ~ .image-slider #imgsliderexamle5,
+  #slider-span5:target ~ .image-slider #buttonslider5{
+    width: 600px;
+    height: 460px;
+    background-color: transparent;
+    filter: saturate(100%);
+  }
+  
+  #slider-span6:target ~ .image-slider #imgsliderexamle6,
+  #slider-span6:target ~ .image-slider #buttonslider6{
+    width: 680px;
+    height: 460px;
+    background-color: transparent;
+    filter: saturate(100%);
+  }
+  
+  
+  #slider-span7:target ~ .image-slider #imgsliderexamle7,
+  #slider-span7:target ~ .image-slider #buttonslider7{
+    width: 240px;
+    height: 460px;
+    background-color: transparent;
+    filter: saturate(100%);
+  }
+  
+  
+  
+  #slider-span1:target ~.image-slider{
+    left: 70%;
+  }
+  
+  #slider-span2:target ~.image-slider{
+    left: 50%;
+  }
+  
+  #slider-span3:target ~.image-slider{
+    left: 30%;
+  }
+  
+  
+  
+  #slider-span5:target ~.image-slider{
+    left: -25%;
+  }
+  
+  
+  #slider-span6:target ~.image-slider{
+    left: -50%;
+  }
+  
+  #slider-span7:target ~.image-slider{
+    left: -70%;
+  }
+

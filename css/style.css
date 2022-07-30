@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-expand-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+header {
+  background-image: url(../images/hero_home_june21.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background-color: #07073698;
+}
+
+.navbarmain {
+  width: 60%;
+  margin-left: 150px;
+  margin-right: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.bannerheight {
+  height: 550px;
+}
+
+.meulink {
+  font-size: 22px;
+  display: block;
+  margin: 0px 15px;
+  font-weight: 600;
+}
+
+.foranavbar p {
+  width: 80px;
+  border: none;
+  color: white;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.navbarmain li a {
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.navbarmain li a:hover {
+  background-color: rgba(240, 248, 255, 0.428);
+}
+
+img {
+  width: 100%;
+}
+
+.bannertitle {
+  color: black;
+  text-align: center;
+}
+
+.bannertitle p {
+  font-size: 20px;
+}
+
+.bannertitle h1 {
+  font-size: 70px;
+  color: #030331;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.bannertitle h1 span {
+  color: #151bc9;
+}
+
+.bannertitle button {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  background-color: #151bc9;
+  color: white;
+  border: none;
+  margin: 25px 0px;
+  height: 50px;
+  width: 170px;
+}
+
+.bannertitle button:hover {
+  background-color: blue;
+}
+
+.TrustBadges {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.TrustBadges img {
+  width: 400px;
+}
+
+#colorblue {
+  color: #030331;
+}
+
+#coloraqua {
+  color: #151bc9;
+}
+
+.colorblue {
+  color: #030331;
+}
+
+.coloraqua {
+  color: #151bc9;
+}
+
+.colorblack {
+  color: black;
+}
+
+.colorwhite {
+  background-color: white;
+}
+
+.fontweight800 {
+  font-weight: 800;
+}
+
+.fontweight700 {
+  font-weight: 700;
+}
+
+.fontweight600 {
+  font-weight: 600;
+}
+
+.fontweight500 {
+  font-weight: 500;
+}
+
+div video {
+  width: 100%;
+}
+
+.checkgreen {
+  border: 1px solid green;
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  margin: 0px 10px;
+}
+
+.paddingleft50 {
+  padding: 15px;
+  padding-left: 100px;
+}
+
+.paddingleft50 a {
+  padding: 0px 0px 0px 20px;
+}
+
+.paddingleft50 a i {
+  margin-left: 5px;
+}
+
+.firstsection {
+  background-color: #030331;
+}
+
+.firstsection h3 {
+  color: white;
+  margin: 25px 0px 15px 0px;
+  font-weight: 500;
+}
+
+.firstsection button {
+  border: none;
+  padding: 10px 0px;
+  background-color: #151bc9;
+  width: 150px;
+  margin: 15px 0px 25px 0px;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-coloraqua {
+  color: white;
+  background-color: #151bc9;
+  width: 300px;
+  border: none;
+  padding: 15px 0px;
+  text-align: center;
+  margin: 25px 0px 25px 15px;
+}
+
+.ahrefright {
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.ahrefright i {
+  margin-left: 5px;
+}
+
+.imgsection {
+  width: 100%;
+}
+
+.imgsection1{
+  width: 100%;
+
+}
+
+.buttonaqua {
+  color: white;
+  background-color: #151bc9;
+  width: 200px;
+  padding: 10px 0px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+
+  .display-none{
+    display: none;
+  }
+  .margintopfirst {
+    margin-top: 200px;
+  }
+  .foranavbar p {
+    display: none;
+  }
+  .navbarmain {
+    text-align: center;
+  }
+  .foranavbar {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-brand img {
+    width: 150px;
+  }
+  img {
+    width: 100%;
+  }
+  .bannertitle {
+    margin: 200px 0px 0px 0px;
+    text-align: center;
+  }
+  .bannertitle h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  .bannertitle p {
+    font-size: 16px;
+  }
+  .TrustBadges {
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .TrustBadges img {
+    width: 400px;
+  }
+  #logotext {
+    width: 100px;
+    height: 35px;
+    color: #030331;
+    background-color: 0;
+    border: 1px solid #030331;
+    margin: 0;
+    padding: 0px 15px;
+    font-weight: 600;
+    font-size: 28px;
+  }
+}
+
+#logotext {
+  width: 120px;
+  height: 40px;
+  color: #030331;
+  background-color: 0;
+  border: 2px solid #030331;
+  margin: 0;
+  padding: 0px 25px;
+  font-weight: 800;
+  font-size: 32px;
+}
+/*# sourceMappingURL=style.css.map */
